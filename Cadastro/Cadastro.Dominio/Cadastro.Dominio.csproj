@@ -45,11 +45,11 @@
     <Compile Include="Entidades\Endereco.cs" />
     <Compile Include="Entidades\Estado.cs" />
     <Compile Include="Entidades\Pessoa.cs" />
+    <Compile Include="Interfaces\Configuracao\IUnidadeDeTrabalho.cs" />
+    <Compile Include="Interfaces\Repositorio\ICidadeRepositorio.cs" />
+    <Compile Include="Interfaces\Repositorio\IRepositorioBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\Configuracao\" />
-    <Folder Include="Interfaces\Repositorio\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

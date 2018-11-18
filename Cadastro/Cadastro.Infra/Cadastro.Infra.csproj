@@ -118,15 +118,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\PessoaContexto.cs" />
+    <Compile Include="Config\UnidadeDeTrabalho.cs" />
     <Compile Include="Mapeamento\CidadeMapeamento.cs" />
     <Compile Include="Mapeamento\EnderecoMapeamento.cs" />
     <Compile Include="Mapeamento\EstadoMapeamento.cs" />
     <Compile Include="Mapeamento\PessoaMapeamento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\CidadeRepositorio.cs" />
+    <Compile Include="Repositorios\RepositorioBase.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositorios\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Cadastro.Dominio\Cadastro.Dominio.csproj">
       <Project>{e059ab33-3d6e-46d5-b0e3-c00b4b6de3bc}</Project>
