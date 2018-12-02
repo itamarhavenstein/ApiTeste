@@ -65,7 +65,9 @@ namespace Cadastro.Api.App_Start
             kernel.Bind<PessoaContexto>().ToSelf();
 
             kernel.Bind<ICidadeRepositorio>().To<CidadeRepositorio>();
-            kernel.Bind<CidadeServicos>().ToSelf();            
+            kernel.Bind<CidadeServicos>().ToSelf();
+            kernel.Bind<CidadeAdaptador>().ToSelf();
+            kernel.Bind<CidadeValidador>().ToSelf();
         }        
     }
 }
