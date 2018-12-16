@@ -1,4 +1,6 @@
-﻿namespace Cadastro
+﻿using System.Collections.Generic;
+
+namespace Cadastro
 {
     public class ResultadoOperacao : IResultadoOperacao
     {
@@ -23,6 +25,6 @@
             ErroMensagem = erroMensagem;
             ErroCodigo = erroCodigo;
         }
-
+      
     }
 }

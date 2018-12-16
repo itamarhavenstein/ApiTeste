@@ -5,11 +5,14 @@ namespace Cadastro.Api.App_Start
 {
     using System;
     using System.Web;
-
+    using System.Web.Http;
+    using Cadastro.Api.Controllers;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
     using Ninject;
     using Ninject.Web.Common;
+    using Ninject.Web.Common.WebHost;
+    using Ninject.Web.WebApi;
 
     public static class NinjectWebCommon 
     {
@@ -46,6 +49,7 @@ namespace Cadastro.Api.App_Start
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
                 RegisterServices(kernel);
+                GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(kernel);
                 return kernel;
             }
             catch
@@ -61,10 +65,11 @@ namespace Cadastro.Api.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IUnidadeDeTrabalho>().To<UnidadeDeTrabalho>().InThreadScope();
+
+            kernel.Bind<IUnidadeDeTrabalho>().To<UnidadeDeTrabalho>().InSingletonScope();
             kernel.Bind<PessoaContexto>().ToSelf();
 
-            kernel.Bind<ICidadeRepositorio>().To<CidadeRepositorio>();
+            kernel.Bind<ICidadeRepositorio>().To<CidadeRepositorio>().InThreadScope();
             kernel.Bind<CidadeServicos>().ToSelf();
             kernel.Bind<CidadeAdaptador>().ToSelf();
             kernel.Bind<CidadeValidador>().ToSelf();

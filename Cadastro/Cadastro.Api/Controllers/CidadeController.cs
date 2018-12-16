@@ -5,15 +5,11 @@ namespace Cadastro.Api.Controllers
     [RoutePrefix("cidade")]
     public class CidadeController : ApiController
     {
-        public CidadeController()
-        {
-
-        }
-        private readonly CidadeServicos CidadeApp;
+        private CidadeServicos CidadeApp = null;
 
         public CidadeController(CidadeServicos cidadeApp)
         {
-            cidadeApp = CidadeApp;
+            CidadeApp = cidadeApp;
         }
 
 

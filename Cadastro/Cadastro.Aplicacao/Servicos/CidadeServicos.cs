@@ -4,9 +4,9 @@
     {
         private CidadeAdaptador CidadeAdapt;
         private CidadeValidador CidadeVali;
-        private CidadeRepositorio CidadeRepo;
+        private ICidadeRepositorio CidadeRepo;
 
-        public CidadeServicos(CidadeAdaptador cidadeAdapt,CidadeValidador cidadeVali, CidadeRepositorio cidadeRepo)
+        public CidadeServicos(CidadeAdaptador cidadeAdapt,CidadeValidador cidadeVali, ICidadeRepositorio cidadeRepo)
         {
             CidadeAdapt = cidadeAdapt;
             CidadeVali = cidadeVali;

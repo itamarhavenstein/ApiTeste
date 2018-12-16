@@ -1,0 +1,8 @@
+﻿1- Cadastro-MVC
+	-No ninjectWebCommon quando for usado na api precisa inserir está linha de código:
+	 GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(kernel);
+	 inserir isto dentro da criação do kernel
+	 não esquecer de instalar os pacotes nugets do ninject são:
+	    Ninject
+        Ninject.Web.Common 
+		Ninject.Web.Common.WebHost 

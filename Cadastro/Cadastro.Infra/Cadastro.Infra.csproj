@@ -127,7 +127,9 @@
     <Compile Include="Repositorios\CidadeRepositorio.cs" />
     <Compile Include="Repositorios\RepositorioBase.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Informacao\Info.txt" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cadastro.Dominio\Cadastro.Dominio.csproj">
       <Project>{e059ab33-3d6e-46d5-b0e3-c00b4b6de3bc}</Project>
