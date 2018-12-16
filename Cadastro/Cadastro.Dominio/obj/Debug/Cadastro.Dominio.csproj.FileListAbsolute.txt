@@ -1,0 +1,6 @@
+C:\Users\Itamar\source\repos\ApiTeste\Cadastro\Cadastro.Dominio\bin\Debug\Cadastro.Dominio.dll
+C:\Users\Itamar\source\repos\ApiTeste\Cadastro\Cadastro.Dominio\bin\Debug\Cadastro.Dominio.pdb
+C:\Users\Itamar\source\repos\ApiTeste\Cadastro\Cadastro.Dominio\obj\Debug\Cadastro.Dominio.csprojAssemblyReference.cache
+C:\Users\Itamar\source\repos\ApiTeste\Cadastro\Cadastro.Dominio\obj\Debug\Cadastro.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Itamar\source\repos\ApiTeste\Cadastro\Cadastro.Dominio\obj\Debug\Cadastro.Dominio.dll
+C:\Users\Itamar\source\repos\ApiTeste\Cadastro\Cadastro.Dominio\obj\Debug\Cadastro.Dominio.pdb
